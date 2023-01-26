@@ -58,11 +58,17 @@
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>
 	<script>
-		var myCarousel = document.getElementById('myCarousel')
+		// var myCarousel = document.getElementById('myCarousel')
 
-		myCarousel.addEventListener('slide.bs.carousel', function () {
-			// do something...
-		})
+		// myCarousel.addEventListener('slide.bs.carousel', function () {
+		// 	// do something...
+			
+		// })
+		var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: false,
+  pause: true
+})
 	</script>
 </body>
 
